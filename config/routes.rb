@@ -13,7 +13,7 @@ Rails.application.routes.draw do
       resources :home, only: :index
       resources :search, only: :index
 
-      resources :users, only: :show do
+      resources :users, only: [:show, :update] do
         resources :posts, only: :index
         resources :followings, only: %i(index create) do
 	  delete "/", to: "followings#destroy", on: :collection
