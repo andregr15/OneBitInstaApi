@@ -6,7 +6,7 @@ ruby '2.5.1'
 gem 'bootsnap', '>= 1.0.0', require: false
 gem 'devise'
 gem 'fast_jsonapi'
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12'
 gem 'rack-attack'
 gem 'rack-cors'
 gem 'rails', '~> 5.2.1'
